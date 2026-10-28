@@ -15,7 +15,6 @@ Postman testing project for the public [Restful Booker booking API](https://rest
 
 Outcomes include cleanup failures. They are not confirmed-defect totals. The main failures include token-based operations returning 403; Basic-auth operations succeeded. Root-cause investigation and fresh-data reproduction remain pending. [Execution summary](reports/execution-summary.md) · [Investigation register](bug-reports/findings.md) · [Data results](reports/data-driven-results.md).
 
-The uploaded runs, not historical results, are the source for these numbers. Documentation was reconciled from supplied evidence; no new service run was performed for this revision.
 
 This is a practice project, not a production client assessment.
 
