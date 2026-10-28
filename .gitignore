@@ -1,0 +1,9 @@
+node_modules/
+reports/latest*.json
+reports/latest*.xml
+reports/ci-*.log
+reports/ci-*.xml
+.env
+*.local.json
+AKSHAY_PERSONAL_GUIDE*
+.DS_Store

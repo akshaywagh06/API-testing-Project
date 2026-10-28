@@ -1,0 +1,4503 @@
+{
+  "name": "Restful Booker API Quality Assessment",
+  "startedAt": "2026-10-28T09:23:57.205Z",
+  "timestamp": "2026-10-28T09:26:11.554Z",
+  "count": 1,
+  "totalPass": 331,
+  "totalFail": 148,
+  "delay": "750",
+  "status": "finished",
+  "totalTime": 24875,
+  "evidenceNote": "Reviewed assertion-only projection of the user-supplied Postman export; no response bodies, resolved request bodies or assertion error messages were supplied. totalTime is summed primary response time, not wall-clock duration.",
+  "results": [
+    {
+      "name": "API-001 | Health check matches documented 201",
+      "responseCode": {
+        "code": 201,
+        "name": "Created"
+      },
+      "time": 905,
+      "times": [
+        905
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Documented status 201": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 201": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Documented status 201": true
+        }
+      ]
+    },
+    {
+      "name": "API-002 | Valid login returns a nonempty token",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 320,
+      "times": [
+        320
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Nonempty authentication token": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Nonempty authentication token": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Nonempty authentication token": true
+        }
+      ]
+    },
+    {
+      "name": "API-003 | Wrong password",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 263,
+      "times": [
+        263
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Invalid credentials never issue a token": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Invalid credentials never issue a token": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Invalid credentials never issue a token": true
+        }
+      ]
+    },
+    {
+      "name": "API-004 | Wrong username",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 266,
+      "times": [
+        266
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Invalid credentials never issue a token": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Invalid credentials never issue a token": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Invalid credentials never issue a token": true
+        }
+      ]
+    },
+    {
+      "name": "API-005 | Missing username",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 291,
+      "times": [
+        291
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Invalid credentials never issue a token": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Invalid credentials never issue a token": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Invalid credentials never issue a token": true
+        }
+      ]
+    },
+    {
+      "name": "API-006 | Missing password",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 259,
+      "times": [
+        259
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Invalid credentials never issue a token": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Invalid credentials never issue a token": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Invalid credentials never issue a token": true
+        }
+      ]
+    },
+    {
+      "name": "API-007 | Empty credentials",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 259,
+      "times": [
+        259
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Invalid credentials never issue a token": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Invalid credentials never issue a token": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Invalid credentials never issue a token": true
+        }
+      ]
+    },
+    {
+      "name": "API-008 | Null credentials",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 257,
+      "times": [
+        257
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Invalid credentials never issue a token": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Invalid credentials never issue a token": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Invalid credentials never issue a token": true
+        }
+      ]
+    },
+    {
+      "name": "API-009 | Booking ID list has numeric IDs",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 523,
+      "times": [
+        523
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Booking list contract": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Booking list contract": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Booking list contract": true
+        }
+      ]
+    },
+    {
+      "name": "API-010 | Read newly created booking",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 282,
+      "times": [
+        282
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Booking schema": true,
+        "Read matches owned input": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read matches owned input": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Booking schema": true,
+          "Read matches owned input": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-011 | First name filter contains owned booking",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 283,
+      "times": [
+        283
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Booking list contract": true,
+        "Filter includes freshly created booking": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Booking list contract": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Filter includes freshly created booking": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Booking list contract": true,
+          "Filter includes freshly created booking": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-012 | Last name filter contains owned booking",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 272,
+      "times": [
+        272
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Booking list contract": true,
+        "Filter includes freshly created booking": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Booking list contract": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Filter includes freshly created booking": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Booking list contract": true,
+          "Filter includes freshly created booking": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-013 | Both names filter contains owned booking",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 269,
+      "times": [
+        269
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Booking list contract": true,
+        "Filter includes freshly created booking": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Booking list contract": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Filter includes freshly created booking": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Booking list contract": true,
+          "Filter includes freshly created booking": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-014 | Check-in lower bound filter contains owned booking",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 236,
+      "times": [
+        236
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Booking list contract": true,
+        "Filter includes freshly created booking": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Booking list contract": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Filter includes freshly created booking": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Booking list contract": true,
+          "Filter includes freshly created booking": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-015 | Checkout lower bound filter contains owned booking",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 896,
+      "times": [
+        896
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Booking list contract": true,
+        "Filter includes freshly created booking": false,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Booking list contract": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Filter includes freshly created booking": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Booking list contract": true,
+          "Filter includes freshly created booking": false,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-016 | Unique unmatched name produces empty list",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 344,
+      "times": [
+        344
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Booking list contract": true,
+        "No-match list is empty": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Booking list contract": {
+          "pass": 1,
+          "fail": 0
+        },
+        "No-match list is empty": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Booking list contract": true,
+          "No-match list is empty": true
+        }
+      ]
+    },
+    {
+      "name": "API-017 | Read nonexistent or malformed ID not-a-number",
+      "responseCode": {
+        "code": 404,
+        "name": "Not Found"
+      },
+      "time": 244,
+      "times": [
+        244
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Unknown ID is not a successful booking read": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Unknown ID is not a successful booking read": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Unknown ID is not a successful booking read": true
+        }
+      ]
+    },
+    {
+      "name": "API-018 | Read nonexistent or malformed ID 0",
+      "responseCode": {
+        "code": 404,
+        "name": "Not Found"
+      },
+      "time": 241,
+      "times": [
+        241
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Unknown ID is not a successful booking read": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Unknown ID is not a successful booking read": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Unknown ID is not a successful booking read": true
+        }
+      ]
+    },
+    {
+      "name": "API-019 | Read nonexistent or malformed ID -1",
+      "responseCode": {
+        "code": 404,
+        "name": "Not Found"
+      },
+      "time": 292,
+      "times": [
+        292
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Unknown ID is not a successful booking read": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Unknown ID is not a successful booking read": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Unknown ID is not a successful booking read": true
+        }
+      ]
+    },
+    {
+      "name": "API-020 | Read nonexistent or malformed ID 999999999999",
+      "responseCode": {
+        "code": 404,
+        "name": "Not Found"
+      },
+      "time": 241,
+      "times": [
+        241
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Unknown ID is not a successful booking read": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Unknown ID is not a successful booking read": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Unknown ID is not a successful booking read": true
+        }
+      ]
+    },
+    {
+      "name": "API-021 | Read response XML negotiation",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 284,
+      "times": [
+        284
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "XML representation returned": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "XML representation returned": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "XML representation returned": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-022 | Read response JSON negotiation",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 233,
+      "times": [
+        233
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Booking schema": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Booking schema": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-023 | Standard booking",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 282,
+      "times": [
+        282
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Created response booking schema": true,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": true,
+        "Saved lastname equals submitted value": true,
+        "Saved totalprice equals submitted value": true,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-024 | No optional additional needs",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 302,
+      "times": [
+        302
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Created response booking schema": true,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": true,
+        "Saved lastname equals submitted value": true,
+        "Saved totalprice equals submitted value": true,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-025 | Deposit false",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 296,
+      "times": [
+        296
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Created response booking schema": true,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": true,
+        "Saved lastname equals submitted value": true,
+        "Saved totalprice equals submitted value": true,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-026 | Integer price",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 289,
+      "times": [
+        289
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Created response booking schema": true,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": true,
+        "Saved lastname equals submitted value": true,
+        "Saved totalprice equals submitted value": true,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-027 | Decimal price",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 240,
+      "times": [
+        240
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Created response booking schema": true,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": true,
+        "Saved lastname equals submitted value": true,
+        "Saved totalprice equals submitted value": false,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": false,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-028 | Unicode name",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 276,
+      "times": [
+        276
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Created response booking schema": true,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": true,
+        "Saved lastname equals submitted value": true,
+        "Saved totalprice equals submitted value": true,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-029 | Spaces in name",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 232,
+      "times": [
+        232
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Created response booking schema": true,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": true,
+        "Saved lastname equals submitted value": true,
+        "Saved totalprice equals submitted value": true,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-030 | Longer name",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 294,
+      "times": [
+        294
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Created response booking schema": true,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": true,
+        "Saved lastname equals submitted value": true,
+        "Saved totalprice equals submitted value": true,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-031 | Later dates",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 279,
+      "times": [
+        279
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Created response booking schema": true,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": true,
+        "Saved lastname equals submitted value": true,
+        "Saved totalprice equals submitted value": true,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-032 | Empty optional needs",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 272,
+      "times": [
+        272
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Created response booking schema": true,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": true,
+        "Saved lastname equals submitted value": true,
+        "Saved totalprice equals submitted value": true,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-033 | firstname = omitted",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 292,
+      "times": [
+        292
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-034 | lastname = omitted",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 261,
+      "times": [
+        261
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-035 | totalprice = omitted",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 273,
+      "times": [
+        273
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-036 | depositpaid = omitted",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 278,
+      "times": [
+        278
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-037 | bookingdates = omitted",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 279,
+      "times": [
+        279
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-038 | firstname = null",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 257,
+      "times": [
+        257
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-039 | lastname = null",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 252,
+      "times": [
+        252
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-040 | totalprice = null",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 288,
+      "times": [
+        288
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-041 | depositpaid = null",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 287,
+      "times": [
+        287
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-042 | bookingdates = null",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 258,
+      "times": [
+        258
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-043 | firstname = 123",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 275,
+      "times": [
+        275
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-044 | lastname = false",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 345,
+      "times": [
+        345
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": false,
+        "Created response booking schema": false,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Created response booking schema": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": false,
+          "Created response booking schema": false,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-045 | totalprice = \"abc\"",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 348,
+      "times": [
+        348
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": false,
+        "Created response booking schema": false,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Created response booking schema": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": false,
+          "Created response booking schema": false,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-046 | depositpaid = \"yes\"",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 290,
+      "times": [
+        290
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": false,
+        "Created response booking schema": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": false,
+          "Created response booking schema": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-047 | bookingdates = \"tomorrow\"",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 351,
+      "times": [
+        351
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-048 | firstname = \"\"",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 285,
+      "times": [
+        285
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": false,
+        "Created response booking schema": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": false,
+          "Created response booking schema": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-049 | lastname = \"\"",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 381,
+      "times": [
+        381
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": false,
+        "Created response booking schema": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": false,
+          "Created response booking schema": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-050 | totalprice = -1",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 247,
+      "times": [
+        247
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": false,
+        "Created response booking schema": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": false,
+          "Created response booking schema": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-051 | totalprice = 0",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 291,
+      "times": [
+        291
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": false,
+        "Created response booking schema": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": false,
+          "Created response booking schema": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-052 | totalprice = 1000000000000",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 286,
+      "times": [
+        286
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": false,
+        "Created response booking schema": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": false,
+          "Created response booking schema": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-053 | Check-in omitted",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 281,
+      "times": [
+        281
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-054 | Checkout omitted",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 290,
+      "times": [
+        290
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    },
+    {
+      "name": "API-055 | Invalid check-in",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 274,
+      "times": [
+        274
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": false,
+        "Created response booking schema": false,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Created response booking schema": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": false,
+          "Created response booking schema": false,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-056 | Invalid calendar date",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 274,
+      "times": [
+        274
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": false,
+        "Created response booking schema": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": false,
+          "Created response booking schema": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-057 | Reversed dates",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 245,
+      "times": [
+        245
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": false,
+        "Created response booking schema": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": false,
+          "Created response booking schema": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-058 | Same-day stay",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 248,
+      "times": [
+        248
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": false,
+        "Created response booking schema": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": false,
+          "Created response booking schema": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-059 | Numeric date",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 282,
+      "times": [
+        282
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": false,
+        "Created response booking schema": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": false,
+          "Created response booking schema": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-060 | Malformed JSON body",
+      "responseCode": {
+        "code": 400,
+        "name": "Bad Request"
+      },
+      "time": 270,
+      "times": [
+        270
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": true
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": true
+        }
+      ]
+    },
+    {
+      "name": "API-061 | Replace every field",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 230,
+      "times": [
+        230
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": false,
+        "Booking schema": false,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": false,
+        "Saved lastname equals submitted value": false,
+        "Saved totalprice equals submitted value": false,
+        "Saved depositpaid equals submitted value": false,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": false,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Booking schema": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": false,
+          "Booking schema": false,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": false,
+          "Saved lastname equals submitted value": false,
+          "Saved totalprice equals submitted value": false,
+          "Saved depositpaid equals submitted value": false,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": false,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-062 | Replace price",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 283,
+      "times": [
+        283
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": false,
+        "Booking schema": false,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": false,
+        "Saved lastname equals submitted value": false,
+        "Saved totalprice equals submitted value": false,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Booking schema": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": false,
+          "Booking schema": false,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": false,
+          "Saved lastname equals submitted value": false,
+          "Saved totalprice equals submitted value": false,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-063 | Replace dates",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 247,
+      "times": [
+        247
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": false,
+        "Booking schema": false,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": false,
+        "Saved lastname equals submitted value": false,
+        "Saved totalprice equals submitted value": true,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": false,
+        "Saved additionalneeds equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Booking schema": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": false,
+          "Booking schema": false,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": false,
+          "Saved lastname equals submitted value": false,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": false,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-064 | Basic auth replacement",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 276,
+      "times": [
+        276
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Booking schema": true,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": true,
+        "Saved lastname equals submitted value": true,
+        "Saved totalprice equals submitted value": true,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-065 | Patch First name",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 269,
+      "times": [
+        269
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": false,
+        "Booking schema": false,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": false,
+        "Untouched lastname preserved": true,
+        "Untouched totalprice preserved": true,
+        "Untouched depositpaid preserved": true,
+        "Untouched bookingdates preserved": true,
+        "Untouched additionalneeds preserved": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Booking schema": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Untouched lastname preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched totalprice preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched depositpaid preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched bookingdates preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched additionalneeds preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": false,
+          "Booking schema": false,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": false,
+          "Untouched lastname preserved": true,
+          "Untouched totalprice preserved": true,
+          "Untouched depositpaid preserved": true,
+          "Untouched bookingdates preserved": true,
+          "Untouched additionalneeds preserved": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-066 | Patch Last name",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 289,
+      "times": [
+        289
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": false,
+        "Booking schema": false,
+        "Read-back: saved booking available": true,
+        "Saved lastname equals submitted value": false,
+        "Untouched firstname preserved": true,
+        "Untouched totalprice preserved": true,
+        "Untouched depositpaid preserved": true,
+        "Untouched bookingdates preserved": true,
+        "Untouched additionalneeds preserved": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Booking schema": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Untouched firstname preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched totalprice preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched depositpaid preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched bookingdates preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched additionalneeds preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": false,
+          "Booking schema": false,
+          "Read-back: saved booking available": true,
+          "Saved lastname equals submitted value": false,
+          "Untouched firstname preserved": true,
+          "Untouched totalprice preserved": true,
+          "Untouched depositpaid preserved": true,
+          "Untouched bookingdates preserved": true,
+          "Untouched additionalneeds preserved": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-067 | Patch Price",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 237,
+      "times": [
+        237
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": false,
+        "Booking schema": false,
+        "Read-back: saved booking available": true,
+        "Saved totalprice equals submitted value": false,
+        "Untouched firstname preserved": true,
+        "Untouched lastname preserved": true,
+        "Untouched depositpaid preserved": true,
+        "Untouched bookingdates preserved": true,
+        "Untouched additionalneeds preserved": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Booking schema": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Untouched firstname preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched lastname preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched depositpaid preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched bookingdates preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched additionalneeds preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": false,
+          "Booking schema": false,
+          "Read-back: saved booking available": true,
+          "Saved totalprice equals submitted value": false,
+          "Untouched firstname preserved": true,
+          "Untouched lastname preserved": true,
+          "Untouched depositpaid preserved": true,
+          "Untouched bookingdates preserved": true,
+          "Untouched additionalneeds preserved": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-068 | Patch Deposit",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 232,
+      "times": [
+        232
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": false,
+        "Booking schema": false,
+        "Read-back: saved booking available": true,
+        "Saved depositpaid equals submitted value": false,
+        "Untouched firstname preserved": true,
+        "Untouched lastname preserved": true,
+        "Untouched totalprice preserved": true,
+        "Untouched bookingdates preserved": true,
+        "Untouched additionalneeds preserved": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Booking schema": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Untouched firstname preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched lastname preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched totalprice preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched bookingdates preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched additionalneeds preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": false,
+          "Booking schema": false,
+          "Read-back: saved booking available": true,
+          "Saved depositpaid equals submitted value": false,
+          "Untouched firstname preserved": true,
+          "Untouched lastname preserved": true,
+          "Untouched totalprice preserved": true,
+          "Untouched bookingdates preserved": true,
+          "Untouched additionalneeds preserved": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-069 | Patch Additional needs",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 273,
+      "times": [
+        273
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": false,
+        "Booking schema": false,
+        "Read-back: saved booking available": true,
+        "Saved additionalneeds equals submitted value": false,
+        "Untouched firstname preserved": true,
+        "Untouched lastname preserved": true,
+        "Untouched totalprice preserved": true,
+        "Untouched depositpaid preserved": true,
+        "Untouched bookingdates preserved": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Booking schema": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Untouched firstname preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched lastname preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched totalprice preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched depositpaid preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched bookingdates preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": false,
+          "Booking schema": false,
+          "Read-back: saved booking available": true,
+          "Saved additionalneeds equals submitted value": false,
+          "Untouched firstname preserved": true,
+          "Untouched lastname preserved": true,
+          "Untouched totalprice preserved": true,
+          "Untouched depositpaid preserved": true,
+          "Untouched bookingdates preserved": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-070 | Patch Dates",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 291,
+      "times": [
+        291
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": false,
+        "Booking schema": false,
+        "Read-back: saved booking available": true,
+        "Saved bookingdates equals submitted value": false,
+        "Untouched firstname preserved": true,
+        "Untouched lastname preserved": true,
+        "Untouched totalprice preserved": true,
+        "Untouched depositpaid preserved": true,
+        "Untouched additionalneeds preserved": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Booking schema": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Untouched firstname preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched lastname preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched totalprice preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched depositpaid preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched additionalneeds preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": false,
+          "Booking schema": false,
+          "Read-back: saved booking available": true,
+          "Saved bookingdates equals submitted value": false,
+          "Untouched firstname preserved": true,
+          "Untouched lastname preserved": true,
+          "Untouched totalprice preserved": true,
+          "Untouched depositpaid preserved": true,
+          "Untouched additionalneeds preserved": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-071 | Patch Two fields",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 283,
+      "times": [
+        283
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": false,
+        "Booking schema": false,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": false,
+        "Saved totalprice equals submitted value": false,
+        "Untouched lastname preserved": true,
+        "Untouched depositpaid preserved": true,
+        "Untouched bookingdates preserved": true,
+        "Untouched additionalneeds preserved": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Booking schema": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Untouched lastname preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched depositpaid preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched bookingdates preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched additionalneeds preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": false,
+          "Booking schema": false,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": false,
+          "Saved totalprice equals submitted value": false,
+          "Untouched lastname preserved": true,
+          "Untouched depositpaid preserved": true,
+          "Untouched bookingdates preserved": true,
+          "Untouched additionalneeds preserved": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-072 | Patch Basic auth patch",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 285,
+      "times": [
+        285
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Booking schema": true,
+        "Read-back: saved booking available": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Untouched firstname preserved": true,
+        "Untouched lastname preserved": true,
+        "Untouched totalprice preserved": true,
+        "Untouched depositpaid preserved": true,
+        "Untouched bookingdates preserved": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched firstname preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched lastname preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched totalprice preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched depositpaid preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Untouched bookingdates preserved": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Untouched firstname preserved": true,
+          "Untouched lastname preserved": true,
+          "Untouched totalprice preserved": true,
+          "Untouched depositpaid preserved": true,
+          "Untouched bookingdates preserved": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-073 | PUT with missing token is denied",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 282,
+      "times": [
+        282
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": true,
+        "Read-back: saved booking available": true,
+        "Denied operation left record unchanged": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Denied operation left record unchanged": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": true,
+          "Read-back: saved booking available": true,
+          "Denied operation left record unchanged": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-074 | PUT with invalid token is denied",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 234,
+      "times": [
+        234
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": true,
+        "Read-back: saved booking available": true,
+        "Denied operation left record unchanged": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Denied operation left record unchanged": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": true,
+          "Read-back: saved booking available": true,
+          "Denied operation left record unchanged": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-075 | PATCH with missing token is denied",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 282,
+      "times": [
+        282
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": true,
+        "Read-back: saved booking available": true,
+        "Denied operation left record unchanged": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Denied operation left record unchanged": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": true,
+          "Read-back: saved booking available": true,
+          "Denied operation left record unchanged": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-076 | PATCH with invalid token is denied",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 268,
+      "times": [
+        268
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": true,
+        "Read-back: saved booking available": true,
+        "Denied operation left record unchanged": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Denied operation left record unchanged": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": true,
+          "Read-back: saved booking available": true,
+          "Denied operation left record unchanged": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-077 | DELETE with missing token is denied",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 251,
+      "times": [
+        251
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": true,
+        "Read-back: saved booking available": true,
+        "Denied operation left record unchanged": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Denied operation left record unchanged": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": true,
+          "Read-back: saved booking available": true,
+          "Denied operation left record unchanged": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-078 | DELETE with invalid token is denied",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 283,
+      "times": [
+        283
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": true,
+        "Read-back: saved booking available": true,
+        "Denied operation left record unchanged": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Denied operation left record unchanged": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": true,
+          "Read-back: saved booking available": true,
+          "Denied operation left record unchanged": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-079 | Token-auth deletion removes owned booking",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 283,
+      "times": [
+        283
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 201": false,
+        "Deleted booking cannot be read": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 201": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Deleted booking cannot be read": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 201": false,
+          "Deleted booking cannot be read": false
+        }
+      ]
+    },
+    {
+      "name": "API-080 | Basic-auth deletion removes owned booking",
+      "responseCode": {
+        "code": 201,
+        "name": "Created"
+      },
+      "time": 244,
+      "times": [
+        244
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 201": true,
+        "Deleted booking cannot be read": true
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 201": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Deleted booking cannot be read": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 201": true,
+          "Deleted booking cannot be read": true
+        }
+      ]
+    },
+    {
+      "name": "API-081 | Repeated PUT preserves final representation",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 239,
+      "times": [
+        239
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 200": false,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": false,
+        "Saved lastname equals submitted value": false,
+        "Saved totalprice equals submitted value": true,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Repeated PUT representation unchanged": false,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Repeated PUT representation unchanged": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 200": false,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": false,
+          "Saved lastname equals submitted value": false,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Repeated PUT representation unchanged": false,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-082 | Repeated DELETE leaves owned booking absent",
+      "responseCode": {
+        "code": 403,
+        "name": "Forbidden"
+      },
+      "time": 279,
+      "times": [
+        279
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Documented status 201": false,
+        "Deleted booking cannot be read": false,
+        "Repeat DELETE does not resurrect data": true,
+        "Still absent after repeat DELETE": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 201": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Deleted booking cannot be read": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Repeat DELETE does not resurrect data": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Still absent after repeat DELETE": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Documented status 201": false,
+          "Deleted booking cannot be read": false,
+          "Repeat DELETE does not resurrect data": true,
+          "Still absent after repeat DELETE": false
+        }
+      ]
+    },
+    {
+      "name": "API-083 | XML create and JSON read back",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 270,
+      "times": [
+        270
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Created response booking schema": true,
+        "Read-back: saved booking available": true,
+        "XML creation persisted its data": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Created response booking schema": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 1,
+          "fail": 0
+        },
+        "XML creation persisted its data": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "XML creation persisted its data": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-084 | Unsupported Accept is rejected",
+      "responseCode": {
+        "code": 418,
+        "name": "I'm a teapot"
+      },
+      "time": 263,
+      "times": [
+        263
+      ],
+      "tests": {
+        "Setup: fresh owned booking created": true,
+        "Response received without server error": true,
+        "Proposed expectation: invalid request rejected with 4xx": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Setup: fresh owned booking created": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Response received without server error": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 1,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Setup: fresh owned booking created": true,
+          "Response received without server error": true,
+          "Proposed expectation: invalid request rejected with 4xx": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    },
+    {
+      "name": "API-085 | Unsupported body media type is rejected",
+      "responseCode": {
+        "code": 500,
+        "name": "Internal Server Error"
+      },
+      "time": 292,
+      "times": [
+        292
+      ],
+      "tests": {
+        "Response received without server error": false,
+        "Proposed expectation: invalid request rejected with 4xx": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 0,
+          "fail": 1
+        },
+        "Proposed expectation: invalid request rejected with 4xx": {
+          "pass": 0,
+          "fail": 1
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": false,
+          "Proposed expectation: invalid request rejected with 4xx": false
+        }
+      ]
+    }
+  ]
+}

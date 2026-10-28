@@ -1,0 +1,15 @@
+{
+  "name": "restful-booker-api-testing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Postman booking API tests with dynamic data, response assertions and repeatable runner commands",
+  "scripts": {
+    "test:smoke": "newman run collections/restful-booker.postman_collection.json -e environments/public-practice.postman_environment.json --folder Smoke --delay-request 750 --timeout-request 20000",
+    "test:regression": "newman run collections/restful-booker.postman_collection.json -e environments/public-practice.postman_environment.json --folder Smoke --folder Authentication --folder \"Read and filters\" --folder \"Create and persistence\" --folder \"Update and workflow\" --folder \"Delete and repeatability\" --delay-request 750 --timeout-request 20000 --reporters cli,json,junit --reporter-json-export reports/latest.json --reporter-junit-export reports/latest.xml",
+    "test:exploratory": "newman run collections/restful-booker.postman_collection.json -e environments/public-practice.postman_environment.json --folder \"Exploratory validation\" --folder Authorization --folder Headers --delay-request 750 --timeout-request 20000",
+    "test:data": "newman run collections/data-driven.postman_collection.json -e environments/public-practice.postman_environment.json -d test-data/create-bookings.json --delay-request 750 --timeout-request 20000"
+  },
+  "devDependencies": {
+    "newman": "6.2.1"
+  }
+}

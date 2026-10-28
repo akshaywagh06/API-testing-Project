@@ -1,0 +1,219 @@
+{
+  "name": "Restful Booker data-driven owned lifecycle",
+  "startedAt": "2026-10-28T09:20:41.045Z",
+  "timestamp": "2026-10-28T09:20:57.677Z",
+  "count": 10,
+  "totalPass": 92,
+  "totalFail": 12,
+  "delay": 0,
+  "status": "finished",
+  "totalTime": 3842,
+  "evidenceNote": "Reviewed assertion-only projection of the user-supplied Postman export; no response bodies, resolved request bodies or assertion error messages were supplied. totalTime is summed primary response time, not wall-clock duration.",
+  "results": [
+    {
+      "name": "DATA-001 | Create row and verify persistence",
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "time": 344,
+      "times": [
+        878,
+        331,
+        343,
+        336,
+        340,
+        350,
+        335,
+        248,
+        337,
+        344
+      ],
+      "tests": {
+        "Response received without server error": true,
+        "Documented status 200": true,
+        "Created response booking schema": true,
+        "Read-back: saved booking available": true,
+        "Saved firstname equals submitted value": true,
+        "Saved lastname equals submitted value": true,
+        "Saved totalprice equals submitted value": true,
+        "Saved depositpaid equals submitted value": true,
+        "Saved bookingdates equals submitted value": true,
+        "Saved additionalneeds equals submitted value": true,
+        "Cleanup: owned record removed or already absent": false
+      },
+      "testPassFailCounts": {
+        "Response received without server error": {
+          "pass": 10,
+          "fail": 0
+        },
+        "Documented status 200": {
+          "pass": 10,
+          "fail": 0
+        },
+        "Created response booking schema": {
+          "pass": 10,
+          "fail": 0
+        },
+        "Read-back: saved booking available": {
+          "pass": 9,
+          "fail": 1
+        },
+        "Saved firstname equals submitted value": {
+          "pass": 9,
+          "fail": 0
+        },
+        "Saved lastname equals submitted value": {
+          "pass": 9,
+          "fail": 0
+        },
+        "Saved totalprice equals submitted value": {
+          "pass": 8,
+          "fail": 1
+        },
+        "Saved depositpaid equals submitted value": {
+          "pass": 9,
+          "fail": 0
+        },
+        "Saved bookingdates equals submitted value": {
+          "pass": 9,
+          "fail": 0
+        },
+        "Saved additionalneeds equals submitted value": {
+          "pass": 9,
+          "fail": 0
+        },
+        "Cleanup: owned record removed or already absent": {
+          "pass": 0,
+          "fail": 10
+        }
+      },
+      "allTests": [
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        },
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        },
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        },
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        },
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": false,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        },
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        },
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        },
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        },
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": false,
+          "Cleanup: owned record removed or already absent": false
+        },
+        {
+          "Response received without server error": true,
+          "Documented status 200": true,
+          "Created response booking schema": true,
+          "Read-back: saved booking available": true,
+          "Saved firstname equals submitted value": true,
+          "Saved lastname equals submitted value": true,
+          "Saved totalprice equals submitted value": true,
+          "Saved depositpaid equals submitted value": true,
+          "Saved bookingdates equals submitted value": true,
+          "Saved additionalneeds equals submitted value": true,
+          "Cleanup: owned record removed or already absent": false
+        }
+      ]
+    }
+  ]
+}

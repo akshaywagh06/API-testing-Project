@@ -1,0 +1,121 @@
+[
+  {
+    "label": "Standard booking",
+    "firstname": "AkshayQA",
+    "lastname": "Portfolio",
+    "totalprice": 123,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2026-11-10",
+      "checkout": "2026-11-12"
+    },
+    "additionalneeds": "Breakfast"
+  },
+  {
+    "label": "No optional additional needs",
+    "firstname": "AkshayQA",
+    "lastname": "Portfolio",
+    "totalprice": 123,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2026-11-10",
+      "checkout": "2026-11-12"
+    }
+  },
+  {
+    "label": "Deposit false",
+    "firstname": "AkshayQA",
+    "lastname": "Portfolio",
+    "totalprice": 123,
+    "depositpaid": false,
+    "bookingdates": {
+      "checkin": "2026-11-10",
+      "checkout": "2026-11-12"
+    },
+    "additionalneeds": "Breakfast"
+  },
+  {
+    "label": "Integer price",
+    "firstname": "AkshayQA",
+    "lastname": "Portfolio",
+    "totalprice": 500,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2026-11-10",
+      "checkout": "2026-11-12"
+    },
+    "additionalneeds": "Breakfast"
+  },
+  {
+    "label": "Decimal price",
+    "firstname": "AkshayQA",
+    "lastname": "Portfolio",
+    "totalprice": 123.5,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2026-11-10",
+      "checkout": "2026-11-12"
+    },
+    "additionalneeds": "Breakfast"
+  },
+  {
+    "label": "Unicode name",
+    "firstname": "Akshay_日本",
+    "lastname": "Portfolio",
+    "totalprice": 123,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2026-11-10",
+      "checkout": "2026-11-12"
+    },
+    "additionalneeds": "Breakfast"
+  },
+  {
+    "label": "Spaces in name",
+    "firstname": "Akshay QA",
+    "lastname": "Portfolio",
+    "totalprice": 123,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2026-11-10",
+      "checkout": "2026-11-12"
+    },
+    "additionalneeds": "Breakfast"
+  },
+  {
+    "label": "Longer name",
+    "firstname": "QAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQAQA",
+    "lastname": "Portfolio",
+    "totalprice": 123,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2026-11-10",
+      "checkout": "2026-11-12"
+    },
+    "additionalneeds": "Breakfast"
+  },
+  {
+    "label": "Later dates",
+    "firstname": "AkshayQA",
+    "lastname": "Portfolio",
+    "totalprice": 123,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2027-01-01",
+      "checkout": "2027-01-05"
+    },
+    "additionalneeds": "Breakfast"
+  },
+  {
+    "label": "Empty optional needs",
+    "firstname": "AkshayQA",
+    "lastname": "Portfolio",
+    "totalprice": 123,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2026-11-10",
+      "checkout": "2026-11-12"
+    },
+    "additionalneeds": ""
+  }
+]

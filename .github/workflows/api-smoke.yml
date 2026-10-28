@@ -1,0 +1,31 @@
+name: Public API smoke
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: public-api-smoke
+  cancel-in-progress: false
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Run smoke and preserve failing exit code
+        shell: bash
+        run: |
+          set -o pipefail
+          npx newman run collections/restful-booker.postman_collection.json -e environments/public-practice.postman_environment.json --folder Smoke --delay-request 750 --timeout-request 20000 --reporters cli,junit --reporter-junit-export reports/ci-smoke.xml | tee reports/ci-smoke.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: smoke-results
+          path: |
+            reports/ci-smoke.xml
+            reports/ci-smoke.log

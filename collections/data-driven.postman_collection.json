@@ -1,0 +1,98 @@
+{
+  "info": {
+    "name": "Restful Booker data-driven owned lifecycle",
+    "description": "Tests for the public Restful Booker practice API. Contract checks, exploratory observations and proposed validation rules are labeled separately. Mutations use newly created synthetic bookings. Personal execution results are pending; see README for scope and run instructions.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "// Public playground only. Bootstrap once; runtime tokens are never exported.",
+          "if (!pm.collectionVariables.get('runTag')) pm.collectionVariables.set('runTag', Date.now().toString(36));",
+          "if (!pm.collectionVariables.get('token')) {",
+          " pm.sendRequest({url:pm.environment.get('baseUrl')+'/auth',method:'POST',header:{'Content-Type':'application/json'},body:{mode:'raw',raw:JSON.stringify({username:'admin',password:'password123'})}},(err,res)=>{",
+          "  pm.test('Setup: authentication available',()=>{pm.expect(err).to.equal(null);pm.expect(res.json().token).to.be.a('string');});",
+          "  if(!err) pm.collectionVariables.set('token',res.json().token);",
+          " });",
+          "}"
+        ]
+      }
+    }
+  ],
+  "variable": [],
+  "item": [
+    {
+      "name": "Data-driven",
+      "item": [
+        {
+          "name": "DATA-001 | Create row and verify persistence",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "(function(){",
+                  "const cfg={\"id\":\"API-023\",\"suite\":\"Create and persistence\",\"title\":\"Standard booking\",\"method\":\"POST\",\"url\":\"/booking\",\"kind\":\"contract\",\"create\":true,\"readback\":true,\"status\":200};",
+                  "",
+                  "})();",
+                  "pm.variables.set('firstname',pm.iterationData.get('firstname')+'_'+pm.collectionVariables.get('runTag'));pm.variables.set('bookingdates',JSON.stringify(pm.iterationData.get('bookingdates')));if(pm.iterationData.get('additionalneeds')===undefined)pm.variables.set('additionalneeds','');"
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "(function(){",
+                  "const cfg={\"id\":\"API-023\",\"suite\":\"Create and persistence\",\"title\":\"Standard booking\",\"method\":\"POST\",\"url\":\"/booking\",\"kind\":\"contract\",\"create\":true,\"readback\":true,\"status\":200};const schema={\"type\":\"object\",\"required\":[\"firstname\",\"lastname\",\"totalprice\",\"depositpaid\",\"bookingdates\"],\"properties\":{\"firstname\":{\"type\":\"string\"},\"lastname\":{\"type\":\"string\"},\"totalprice\":{\"type\":\"number\"},\"depositpaid\":{\"type\":\"boolean\"},\"bookingdates\":{\"type\":\"object\",\"required\":[\"checkin\",\"checkout\"],\"properties\":{\"checkin\":{\"type\":\"string\",\"pattern\":\"^\\\\d{4}-\\\\d{2}-\\\\d{2}$\"},\"checkout\":{\"type\":\"string\",\"pattern\":\"^\\\\d{4}-\\\\d{2}-\\\\d{2}$\"}}},\"additionalneeds\":{\"type\":\"string\"}}};",
+                  "function cleanup(id){if(!id)return;pm.sendRequest({url:pm.environment.get('baseUrl')+'/booking/'+id,method:'DELETE',header:{Cookie:'token='+pm.collectionVariables.get('token')}},(err,res)=>{pm.test('Cleanup: owned record removed or already absent',()=>{pm.expect(err).to.equal(null);pm.expect([201,404,405]).to.include(res.code);});});}",
+                  "let responseBody;try{responseBody=pm.response.json();}catch(e){}",
+                  "pm.test('Response received without server error',()=>pm.expect(pm.response.code).to.be.below(500));",
+                  "// Advisory timing only; there is no published production SLA.",
+                  "console.log('TIMING '+cfg.id+' '+pm.response.responseTime+'ms');",
+                  "pm.test('Documented status 200',()=>pm.response.to.have.status(200));",
+                  "if(responseBody&&typeof responseBody.bookingid==='number'){pm.test('Created response booking schema',()=>pm.expect(tv4.validate(responseBody.booking,schema),JSON.stringify(tv4.error)).to.equal(true));}",
+                  "const id=cfg.create?(responseBody&&responseBody.bookingid):pm.collectionVariables.get('ownedId');",
+                  "if(id){pm.sendRequest({url:pm.environment.get('baseUrl')+'/booking/'+id,method:'GET',header:{Accept:'application/json'}},(err,res)=>{pm.test('Read-back: saved booking available',()=>{pm.expect(err).to.equal(null);pm.expect(res.code).to.equal(200);});if(!err&&res.code===200){const saved=res.json();",
+                  "const input=JSON.parse(pm.variables.replaceIn(pm.request.body.raw));for(const key of Object.keys(input)){pm.test('Saved '+key+' equals submitted value',()=>pm.expect(saved[key]).to.deep.equal(input[key]));}",
+                  "} cleanup(id); });}",
+                  "",
+                  "})();"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/booking",
+            "description": "API-023. Expectation basis: contract. Own-record setup and cleanup where applicable.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\"firstname\":\"{{firstname}}\",\"lastname\":\"{{lastname}}\",\"totalprice\":{{totalprice}},\"depositpaid\":{{depositpaid}},\"bookingdates\":{{bookingdates}},\"additionalneeds\":\"{{additionalneeds}}\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
