@@ -7,7 +7,7 @@ Check the documented booking operations and investigate differences between expe
 Public Restful Booker HTTPS playground. Use Postman or Newman with Node.js 22 LTS. Record actual tool versions and UTC start/end times when executing. Personal execution was completed in Postman for Windows 11.110.0 on 28 October 2026. See the execution summary for actual times and settings.
 
 ## Data and setup
-Use synthetic names and dates. Each mutation captures an ID from a booking created by that test. Authentication uses the provider's public practice credentials. Never put private credentials or captured tokens in the repository.
+Use synthetic names and dates. Each mutation captures an ID from a booking created by that test. Authentication uses the provider's public practice credentials. 
 
 ## Order of execution
 Run smoke, then auth/list/read, create and persistence, full/partial updates, authorization, deletion and headers. Run the 10-row collection separately. In Newman, regression and exploratory folder selections together cover the main collection.

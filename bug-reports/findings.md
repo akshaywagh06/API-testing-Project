@@ -15,6 +15,6 @@ These are observations from Akshay Wagh’s 28 October 2026 run, not maintainer-
 
 ## Reproduction record template
 
-For each candidate, record case ID, date/tool, fresh owned setup data, method and URL, resolved headers with secrets redacted, submitted body, expected result and requirement source, actual response status/body, read-back evidence and cleanup outcome. Add a second-run result, classification and proposed impact. Do not claim a fix, submission or maintainer acceptance without evidence.
+For each candidate, record case ID, date/tool, fresh owned setup data, method and URL, resolved headers with secrets redacted, submitted body, expected result and requirement source, actual response status/body, read-back evidence and cleanup outcome. Add a second-run result, classification and proposed impact. 
 
 Primary sources: [main export](../evidence/requests-responses/2026-10-28-main-reviewed.json), [data export](../evidence/requests-responses/2026-10-28-data-reviewed.json), and the unchanged collection definitions. Downstream failures can share one cause; 160 failed assertions do not mean 160 defects.
